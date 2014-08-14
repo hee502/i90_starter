@@ -1,0 +1,15 @@
+<package>
+  <description brief="i90_starter">
+
+     i90_starter
+
+  </description>
+  <author>hee502</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/i90_starter</url>
+  <depend package="roscpp"/>
+
+</package>
+
+
