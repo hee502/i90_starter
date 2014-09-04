@@ -2,7 +2,7 @@
 //Source for i90_starter node to publish starting positions									 //
 //v1.0 																																			 //
 //Changelog:																																 //
-//-Comments edited																													 //
+//-First creation																									 					 //
 //Huseyin Emre Erdem 																												 //
 //14.08.2014 																																 //
 ///////////////////////////////////////////////////////////////////////////////
@@ -29,9 +29,11 @@ int main(int argc, char **argv)
 
   while (count <1 )
   {
-		starterPub.publish(currentPos);
-		ROS_INFO("Starting position: %0.2f\t%0.2f\t%0.2f", currentPos.fXPos, currentPos.fYPos, currentPos.fYawAngle);
-		count++;
+//		if(count < 1){
+			starterPub.publish(currentPos);
+			ROS_INFO("Starting position: %0.2f\t%0.2f\t%0.2f", currentPos.fXPos, currentPos.fYPos, currentPos.fYawAngle);
+			count++;
+	//	}
     ros::spinOnce();
     loop_rate.sleep();
 		count++;
